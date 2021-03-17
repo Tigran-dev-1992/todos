@@ -9,20 +9,18 @@ import { NotesState } from './Components/Hompage/Notes/NotesState';
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <NotesState>
-          <AlertState>
-            <Navbar />
-            <div className="app pt-5">
-              <div className="container pt-4">
-                <Route path="/" component={HomePage} exact />
-                <Route path="/about" exact component={AboutPage} />
-              </div>
+      <NotesState>
+        <AlertState>
+          <Navbar />
+          <div className="app pt-5">
+            <div className="container pt-4">
+              <Route path="/" component={HomePage} exact />
+              <Route path="/about" exact component={AboutPage} />
             </div>
-          </AlertState>
-        </NotesState>
-      </Switch>
-    </BrowserRouter>
+          </div>
+        </AlertState>
+      </NotesState>
+    </BrowserRouter >
   );
 }
 

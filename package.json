@@ -2,6 +2,7 @@
   "name": "just-app",
   "version": "0.1.0",
   "private": true,
+  "typings": "./index.d.ts",
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "@testing-library/jest-dom": "^5.11.9",
