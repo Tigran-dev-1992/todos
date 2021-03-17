@@ -1,15 +1,14 @@
 import React from 'react';
-import {HashRouter, Route, Switch } from 'react-router-dom'
 import AboutPage from './Components/AboutPage/AboutPage';
 import HomePage from './Components/Hompage/HomePage';
 import Navbar from './Components/Navbar/Navbar';
 import AlertState from './Components/Alert/AlertState';
 import { NotesState } from './Components/Hompage/Notes/NotesState';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    // <BrowserRouter>
-    <HashRouter>
+    <BrowserRouter>
       <NotesState>
         <AlertState>
           <Navbar />
@@ -23,8 +22,8 @@ function App() {
           </Switch>
         </AlertState>
       </NotesState>
-    </HashRouter>
-    // </BrowserRouter>
+    </BrowserRouter>
+
   );
 }
 
