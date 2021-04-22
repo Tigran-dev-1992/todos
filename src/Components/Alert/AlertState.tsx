@@ -3,12 +3,12 @@ import { alertActions, alertInitialState, AlertInitialStateType, alertReducer } 
 import { AlertContext } from './AlertContext'
 
 
-export const AlertState: React.FC = ({ children }) => {
+const AlertState: React.FC = ({ children }) => {
     const [state, dispatch] = useReducer(alertReducer, alertInitialState)
     const show = (payload: AlertInitialStateType) => (dispatch(alertActions.showAlert(payload)))
     const hide = () => (dispatch(alertActions.hideAlert()))
     return (
-        <AlertContext.Provider value={{...state, show, hide }}>
+        <AlertContext.Provider value={{ ...state, show, hide }}>
             {children}
         </AlertContext.Provider>
     )

@@ -2,7 +2,7 @@ import axios, { } from "axios"
 import { NoteDataType } from "../Components/Hompage/Notes/NoteForm"
 
 
-const url = "https://firstprojectfirebase-1489c-default-rtdb.firebaseio.com"
+const url = "https://todolist-fab4e-default-rtdb.firebaseio.com/"
 
 
 type GetDataType = {
