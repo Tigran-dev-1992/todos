@@ -12,7 +12,7 @@ const Navbar = () => {
                         </div>
                     <ul className=" d-flex align-items-center nav__items">
                         <li className="nav-item ">
-                            <NavLink className="nav-link" to="/" exact>Home</NavLink>
+                            <NavLink className="nav-link" to="/todos" exact>Home</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/about">About</NavLink>
