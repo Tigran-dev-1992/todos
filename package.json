@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "typings": "./index.d.ts",
-  "homepage": "https://tigran-dev-1992.github.io/todos/",
+  "homepage": "https://tigran-dev-1992.github.io/todo/",
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "@testing-library/jest-dom": "^5.11.9",
